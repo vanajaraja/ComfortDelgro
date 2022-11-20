@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.428">
+<testcase classname="Validate the SignUp functionality of RealWorld application" name="validate the signup functionality" time="2.293">
+<system-out><![CDATA[Given Sending the signup payload............................................passed
+When create user with post request..........................................passed
+Then Should get proper response.............................................passed
+And Status code.............................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

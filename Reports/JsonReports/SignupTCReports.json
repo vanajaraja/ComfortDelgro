@@ -1,0 +1,1192 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-20T09:11:24.395Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.beforeEachScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.startTime()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "validate the signup functionality with incorrect test data",
+        "description": "",
+        "id": "validate-the-signup-functionality-of-realworld-application;validate-the-signup-functionality-with-incorrect-test-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 228000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.generateReport(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.endTime()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 519000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Sending the signup payload with \"\",\"\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 42
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.sending_the_signup_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1608000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "create user with post request",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.create_user_with_post_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Should get proper response",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.should_get_proper_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Signup Status code should be 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 29
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.signup_status_code_should_be(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.json.JSONException: JSONObject[\"username\"] not found.\r\n\tat org.json.JSONObject.get(JSONObject.java:570)\r\n\tat org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:49)\r\n\tat org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)\r\n\tat ✽.error message should be \"email can\u0027t be blank\"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)\r\n",
+              "duration": 10000000,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "error message should be \"email can\u0027t be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email can\u0027t be blank\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.error_message_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-20T09:11:26.925Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.beforeEachScenario()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.startTime()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "validate the signup functionality with incorrect test data",
+        "description": "",
+        "id": "validate-the-signup-functionality-of-realworld-application;validate-the-signup-functionality-with-incorrect-test-data;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 42000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.generateReport(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.endTime()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Sending the signup payload with \"test202201\",\"test202201@gmail.com\" and \"Test@2022\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test202201\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"test202201@gmail.com\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"Test@2022\"",
+                  "offset": 72
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.sending_the_signup_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 823000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "create user with post request",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.create_user_with_post_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Should get proper response",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.should_get_proper_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Signup Status code should be 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 29
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.signup_status_code_should_be(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.ClassCastException: org.json.JSONArray cannot be cast to java.lang.String\r\n\tat org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:50)\r\n\tat org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)\r\n\tat ✽.error message should be \"email has already been taken and username has already taken\"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "error message should be \"email has already been taken and username has already taken\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email has already been taken and username has already taken\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.error_message_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-20T09:11:27.807Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.beforeEachScenario()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.startTime()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "validate the signup functionality with incorrect test data",
+        "description": "",
+        "id": "validate-the-signup-functionality-of-realworld-application;validate-the-signup-functionality-with-incorrect-test-data;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.generateReport(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.endTime()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Sending the signup payload with \"test202201\",\"\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test202201\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 52
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.sending_the_signup_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 664000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "create user with post request",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.create_user_with_post_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Should get proper response",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.should_get_proper_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Signup Status code should be 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 29
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.signup_status_code_should_be(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.json.JSONException: JSONObject[\"username\"] not found.\r\n\tat org.json.JSONObject.get(JSONObject.java:570)\r\n\tat org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:49)\r\n\tat org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)\r\n\tat ✽.error message should be \"email can\u0027t be blank\"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)\r\n",
+              "duration": 2000000,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "error message should be \"email can\u0027t be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email can\u0027t be blank\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.error_message_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-20T09:11:28.547Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.beforeEachScenario()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.startTime()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "validate the signup functionality with incorrect test data",
+        "description": "",
+        "id": "validate-the-signup-functionality-of-realworld-application;validate-the-signup-functionality-with-incorrect-test-data;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.generateReport(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.endTime()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Sending the signup payload with \"\",\"test202201@gmail.com\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"test202201@gmail.com\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 62
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.sending_the_signup_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 638000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "create user with post request",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.create_user_with_post_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Should get proper response",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.should_get_proper_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Signup Status code should be 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 29
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.signup_status_code_should_be(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.ClassCastException: org.json.JSONArray cannot be cast to java.lang.String\r\n\tat org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:50)\r\n\tat org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)\r\n\tat ✽.error message should be \"username can\u0027t be blank\"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "error message should be \"username can\u0027t be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username can\u0027t be blank\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.error_message_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-20T09:11:29.256Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.beforeEachScenario()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.startTime()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "validate the signup functionality with incorrect test data",
+        "description": "",
+        "id": "validate-the-signup-functionality-of-realworld-application;validate-the-signup-functionality-with-incorrect-test-data;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.generateReport(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.endTime()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Sending the signup payload with \"\",\"\" and \"Test@2022\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Test@2022\"",
+                  "offset": 42
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.sending_the_signup_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 646000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "create user with post request",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.create_user_with_post_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Should get proper response",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.should_get_proper_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Signup Status code should be 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 29
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.signup_status_code_should_be(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.json.JSONException: JSONObject[\"username\"] not found.\r\n\tat org.json.JSONObject.get(JSONObject.java:570)\r\n\tat org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:49)\r\n\tat org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)\r\n\tat ✽.error message should be \"email can\u0027t be blank\"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "error message should be \"email can\u0027t be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email can\u0027t be blank\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.error_message_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-20T09:11:29.965Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.beforeEachScenario()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.startTime()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "validate the signup functionality with incorrect test data",
+        "description": "",
+        "id": "validate-the-signup-functionality-of-realworld-application;validate-the-signup-functionality-with-incorrect-test-data;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.generateReport(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.endTime()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Sending the signup payload with \"test202201\",\"test202201@gmail.com\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test202201\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"test202201@gmail.com\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 72
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.sending_the_signup_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 688000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "create user with post request",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.create_user_with_post_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Should get proper response",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.should_get_proper_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Signup Status code should be 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 29
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.signup_status_code_should_be(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.json.JSONException: JSONObject[\"username\"] not found.\r\n\tat org.json.JSONObject.get(JSONObject.java:570)\r\n\tat org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:49)\r\n\tat org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)\r\n\tat ✽.error message should be \"password can\u0027t be blank\"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "error message should be \"password can\u0027t be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password can\u0027t be blank\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.error_message_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-20T09:11:30.725Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.beforeEachScenario()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.startTime()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "validate the signup functionality with incorrect test data",
+        "description": "",
+        "id": "validate-the-signup-functionality-of-realworld-application;validate-the-signup-functionality-with-incorrect-test-data;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.generateReport(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.endTime()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Sending the signup payload with \"test202201\",\"\" and \"Test@2022\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test202201\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"Test@2022\"",
+                  "offset": 52
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.sending_the_signup_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 608000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "create user with post request",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.create_user_with_post_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Should get proper response",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.should_get_proper_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Signup Status code should be 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 29
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.signup_status_code_should_be(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.json.JSONException: JSONObject[\"username\"] not found.\r\n\tat org.json.JSONObject.get(JSONObject.java:570)\r\n\tat org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:49)\r\n\tat org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)\r\n\tat ✽.error message should be \"email can\u0027t be blank\"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "error message should be \"email can\u0027t be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email can\u0027t be blank\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.error_message_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-20T09:11:31.377Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.beforeEachScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.startTime()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "validate the signup functionality with incorrect test data",
+        "description": "",
+        "id": "validate-the-signup-functionality-of-realworld-application;validate-the-signup-functionality-with-incorrect-test-data;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.generateReport(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.endTime()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.afterEachScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Sending the signup payload with \"\",\"test202201@gmail.com\" and \"Test@2022\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"test202201@gmail.com\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Test@2022\"",
+                  "offset": 62
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.sending_the_signup_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 646000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "create user with post request",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.create_user_with_post_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Should get proper response",
+            "match": {
+              "location": "org.stepdefinition.SignUpTestcases.should_get_proper_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Signup Status code should be 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 29
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.signup_status_code_should_be(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.ClassCastException: org.json.JSONArray cannot be cast to java.lang.String\r\n\tat org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:50)\r\n\tat org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)\r\n\tat ✽.error message should be \"username can\u0027t be blank\"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)\r\n",
+              "duration": 2000000,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "error message should be \"username can\u0027t be blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username can\u0027t be blank\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.stepdefinition.SignUpTestcases.error_message_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the SignUp functionality of RealWorld application",
+    "description": "",
+    "id": "validate-the-signup-functionality-of-realworld-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/SignUp.feature",
+    "tags": []
+  }
+]
