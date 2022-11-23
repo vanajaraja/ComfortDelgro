@@ -25,6 +25,7 @@ public class SignInTestcases extends BaseClass{
 		RestAssured.baseURI = BASE_URI;
 		request = RestAssured.given().header("Content-Type", "application/json")
 				.body(SignInPayLoad.signIn(email, password));
+		logger.info("SignIn Payload : " + SignInPayLoad.signIn(email, password));
 	}
 
 	
@@ -37,7 +38,7 @@ public class SignInTestcases extends BaseClass{
 	public void should_get_proper_signin_response() throws ParseException {
 
 		String getResp = getResp(response);
-		System.out.println(getResp);
+		logger.info("Signin Response : " + getResp);
 		//getStringvalue(getResp, "errors");
 
 	}
@@ -45,9 +46,6 @@ public class SignInTestcases extends BaseClass{
 	@Then("Status code should be {int}")
 	public void status_code_should_be(int statusCode) {
 		Assert.assertEquals(statusCode, statusCode(response));
+		logger.info("Assertion done on Status Code: " + statusCode(response));
 	}
-	
-	
-
-
 }

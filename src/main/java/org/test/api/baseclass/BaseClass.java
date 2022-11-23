@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -19,9 +22,10 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class BaseClass {
+	public static Logger logger;
 
 	public static int statusCode(Response response) {
-		System.out.println("Status Code " + response.getStatusCode());
+		logger.info("Status Code " + response.getStatusCode());
 		return response.getStatusCode();
 
 	}
@@ -32,29 +36,22 @@ public class BaseClass {
 
 	}
 
-	public static void getvalue(String response, String key) throws ParseException {
-
-		JSONParser j = new JSONParser();
-		Object object = j.parse(response);
-		JSONObject o = (JSONObject) object;
-		Long value = (Long) o.get(key);
-		System.out.println(value);
-
-	}
-
-	public static String getStringvalue(String response, String jsonObjectKey,String key) throws ParseException {
+	public static String getStringvalue(String response, String jsonObjectKey, String key) throws ParseException {
 
 		JSONObject jsonObject = new JSONObject(response);
 		JSONObject getSth = jsonObject.getJSONObject(jsonObjectKey);
 		Object object = getSth.get(key);
 		String value = (String) object;
-		System.out.println(value);
+		return value;
 
-		/*
-		 * JSONParser j = new JSONParser(); Object object = j.parse(response);
-		 * JSONObject o = (JSONObject) object; String value = (String) o.get(key);
-		 * System.out.println(value);
-		 */
+	}
+
+	public static String getStringValueFromJsonArray(String response, String jsonObjectKey, String key) {
+		JSONObject jsonObject = new JSONObject(response);
+		JSONObject getSth = jsonObject.getJSONObject(jsonObjectKey);
+		JSONArray js = (JSONArray) getSth.get(key);
+		Object object = js.get(0);
+		String value = (String) object;
 		return value;
 
 	}
@@ -87,7 +84,6 @@ public class BaseClass {
 	}
 
 	public static String getDataFromConfigPropertyFile(String propKey) {
-		// TODO Auto-generated method stub
 		String props = null;
 
 		try {
@@ -97,7 +93,6 @@ public class BaseClass {
 			p.load(f);
 			props = p.getProperty(propKey);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return props;
@@ -109,11 +104,24 @@ public class BaseClass {
 		return format;
 
 	}
-	// public static void getToken() {
-	// TODO Auto-generated method stub
-	// PreemptiveBasicAuthScheme authScheme = new PreemptiveBasicAuthScheme();
-	// authScheme.setUserName("test202201@gmail.com");
-	// authScheme.setPassword("test@2022");
-	// RestAssured.authentication = authScheme;
-	// }
+
+	public static void writeLogFile() throws SecurityException, IOException {
+		logger = Logger.getLogger("MyLog");
+		FileHandler fh;
+		String dataAndTime = dateAndTimeFormatToAppendReports();
+
+		try {
+
+			String filePath = System.getProperty("user.dir") + "\\Reports\\TestLogFile" + dataAndTime + ".log";
+			fh = new FileHandler(filePath);
+			logger.addHandler(fh);
+			SimpleFormatter formatter = new SimpleFormatter();
+			fh.setFormatter(formatter);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
 }

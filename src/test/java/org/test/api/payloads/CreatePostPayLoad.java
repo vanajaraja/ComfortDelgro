@@ -2,13 +2,13 @@ package org.test.api.payloads;
 
 public class CreatePostPayLoad {
 	
-	public static String createPost() {
+	public static String createPost(String title, String descip, String body, String tagList, int num) {
 		return "{\r\n" + 
 				"  \"article\": {\r\n" + 
-				"    \"title\": \"tesgygyyuihghgfgjgjyhhh\",\r\n" + 
-				"    \"description\": \"bjhjkkn\",\r\n" + 
-				"    \"body\": \"bjgjhfyhgvhjv\",\r\n" + 
-				"    \"tagList\": \"\"\r\n" + 
+				"    \"title\": "+"\""+title+num+"\""+",\r\n" + 
+				"    \"description\": "+"\""+descip+"\""+",\r\n" + 
+				"    \"body\": "+"\""+body+"\""+",\r\n" + 
+				"    \"tagList\": "+"\""+tagList+"\""+"\r\n" + 
 				"  }\r\n" + 
 				"}";
 		

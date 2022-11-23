@@ -26,7 +26,6 @@ public class GenerateHTMLReport {
 	// Create the extent html rport
 	public static void createReport(Scenario s) {
 		String testName = s.getName();
-		System.out.println(testName);
 		switch (s.getStatus()) {
 		case PASSED:
 			e.createTest(testName).pass("Scenario Passed");

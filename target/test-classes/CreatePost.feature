@@ -1,5 +1,5 @@
 #Author : vanajasadasivam@gmail.com
-#@Functional
+@Functional
 
 Feature: Validate the create post functionality of RealWorld application 
 

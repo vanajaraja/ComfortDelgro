@@ -1,120 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="8" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="7.882">
-<testcase classname="Validate the SignUp functionality of RealWorld application" name="validate the signup functionality with incorrect test data" time="2.448">
-<failure message="JSONObject[&quot;username&quot;] not found." type="org.json.JSONException"><![CDATA[Given Sending the signup payload with "","" and ""..........................passed
-When create user with post request..........................................passed
-Then Should get proper response.............................................passed
-And Signup Status code should be 422........................................passed
-And error message should be "email can't be blank"..........................failed
-
-StackTrace:
-org.json.JSONException: JSONObject["username"] not found.
-	at org.json.JSONObject.get(JSONObject.java:570)
-	at org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:49)
-	at org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)
-	at ✽.error message should be "email can't be blank"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)
-]]></failure>
-</testcase>
-<testcase classname="Validate the SignUp functionality of RealWorld application" name="validate the signup functionality with incorrect test data 2" time="0.878">
-<failure message="org.json.JSONArray cannot be cast to java.lang.String" type="java.lang.ClassCastException"><![CDATA[Given Sending the signup payload with "test202201","test202201@gmail.com" and "Test@2022".passed
-When create user with post request..........................................passed
-Then Should get proper response.............................................passed
-And Signup Status code should be 422........................................passed
-And error message should be "email has already been taken and username has already taken".failed
-
-StackTrace:
-java.lang.ClassCastException: org.json.JSONArray cannot be cast to java.lang.String
-	at org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:50)
-	at org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)
-	at ✽.error message should be "email has already been taken and username has already taken"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)
-]]></failure>
-</testcase>
-<testcase classname="Validate the SignUp functionality of RealWorld application" name="validate the signup functionality with incorrect test data 3" time="0.734">
-<failure message="JSONObject[&quot;username&quot;] not found." type="org.json.JSONException"><![CDATA[Given Sending the signup payload with "test202201","" and ""................passed
-When create user with post request..........................................passed
-Then Should get proper response.............................................passed
-And Signup Status code should be 422........................................passed
-And error message should be "email can't be blank"..........................failed
-
-StackTrace:
-org.json.JSONException: JSONObject["username"] not found.
-	at org.json.JSONObject.get(JSONObject.java:570)
-	at org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:49)
-	at org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)
-	at ✽.error message should be "email can't be blank"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)
-]]></failure>
-</testcase>
-<testcase classname="Validate the SignUp functionality of RealWorld application" name="validate the signup functionality with incorrect test data 4" time="0.705">
-<failure message="org.json.JSONArray cannot be cast to java.lang.String" type="java.lang.ClassCastException"><![CDATA[Given Sending the signup payload with "","test202201@gmail.com" and ""......passed
-When create user with post request..........................................passed
-Then Should get proper response.............................................passed
-And Signup Status code should be 422........................................passed
-And error message should be "username can't be blank".......................failed
-
-StackTrace:
-java.lang.ClassCastException: org.json.JSONArray cannot be cast to java.lang.String
-	at org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:50)
-	at org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)
-	at ✽.error message should be "username can't be blank"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)
-]]></failure>
-</testcase>
-<testcase classname="Validate the SignUp functionality of RealWorld application" name="validate the signup functionality with incorrect test data 5" time="0.706">
-<failure message="JSONObject[&quot;username&quot;] not found." type="org.json.JSONException"><![CDATA[Given Sending the signup payload with "","" and "Test@2022".................passed
-When create user with post request..........................................passed
-Then Should get proper response.............................................passed
-And Signup Status code should be 422........................................passed
-And error message should be "email can't be blank"..........................failed
-
-StackTrace:
-org.json.JSONException: JSONObject["username"] not found.
-	at org.json.JSONObject.get(JSONObject.java:570)
-	at org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:49)
-	at org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)
-	at ✽.error message should be "email can't be blank"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)
-]]></failure>
-</testcase>
-<testcase classname="Validate the SignUp functionality of RealWorld application" name="validate the signup functionality with incorrect test data 6" time="0.757">
-<failure message="JSONObject[&quot;username&quot;] not found." type="org.json.JSONException"><![CDATA[Given Sending the signup payload with "test202201","test202201@gmail.com" and "".passed
-When create user with post request..........................................passed
-Then Should get proper response.............................................passed
-And Signup Status code should be 422........................................passed
-And error message should be "password can't be blank".......................failed
-
-StackTrace:
-org.json.JSONException: JSONObject["username"] not found.
-	at org.json.JSONObject.get(JSONObject.java:570)
-	at org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:49)
-	at org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)
-	at ✽.error message should be "password can't be blank"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)
-]]></failure>
-</testcase>
-<testcase classname="Validate the SignUp functionality of RealWorld application" name="validate the signup functionality with incorrect test data 7" time="0.645">
-<failure message="JSONObject[&quot;username&quot;] not found." type="org.json.JSONException"><![CDATA[Given Sending the signup payload with "test202201","" and "Test@2022".......passed
-When create user with post request..........................................passed
-Then Should get proper response.............................................passed
-And Signup Status code should be 422........................................passed
-And error message should be "email can't be blank"..........................failed
-
-StackTrace:
-org.json.JSONException: JSONObject["username"] not found.
-	at org.json.JSONObject.get(JSONObject.java:570)
-	at org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:49)
-	at org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)
-	at ✽.error message should be "email can't be blank"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)
-]]></failure>
-</testcase>
-<testcase classname="Validate the SignUp functionality of RealWorld application" name="validate the signup functionality with incorrect test data 8" time="0.709">
-<failure message="org.json.JSONArray cannot be cast to java.lang.String" type="java.lang.ClassCastException"><![CDATA[Given Sending the signup payload with "","test202201@gmail.com" and "Test@2022".passed
-When create user with post request..........................................passed
-Then Should get proper response.............................................passed
-And Signup Status code should be 422........................................passed
-And error message should be "username can't be blank".......................failed
-
-StackTrace:
-java.lang.ClassCastException: org.json.JSONArray cannot be cast to java.lang.String
-	at org.test.api.baseclass.BaseClass.getStringvalue(BaseClass.java:50)
-	at org.stepdefinition.SignUpTestcases.error_message_should_be(SignUpTestcases.java:65)
-	at ✽.error message should be "username can't be blank"(file:///C:/Users/vanaj/eclipse-workspace/ComfortDelGroAssessmentTaskB/src/test/resources/SignUp.feature:21)
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.631">
+<testcase classname="Validate the create post functionality of RealWorld application" name="validate the create post functionality" time="3.446">
+<system-out><![CDATA[Given Sending the signin post request with "email" and "password"...........passed
+And Get token from signin response..........................................passed
+And Sending the create post payload with token..............................passed
+When create a new post with post request....................................passed
+Then Should get proper create post response.................................passed
+And Create Post Status code should be 200...................................passed
+]]></system-out>
 </testcase>
 </testsuite>

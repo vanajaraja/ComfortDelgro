@@ -1,6 +1,7 @@
 package org.test.api.testrunner;
 
 import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,12 +18,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources", glue = {
-		"org.stepdefinition" }, dryRun = false, monochrome = true, tags = "@Regression", plugin = { "pretty",
+		"org.stepdefinition" }, dryRun = false, monochrome = true, tags = "@Functional", plugin = { "pretty",
 				"html:Reports\\HtmlReports", 
 				"json:Reports\\JsonReports\\SignupTCReports.json",
 				"junit:Reports\\XmlReports\\SignupTCReports.xml" })
 
-public class TestRunner {
+public class TestRunner extends BaseClass{
 	
 	@BeforeClass
 	public static void reportStart() {
@@ -30,6 +31,13 @@ public class TestRunner {
 		GenerateHTMLReport.configReport(System.getProperty("user.dir")+"\\Reports\\ExtentReports\\extentReports"+dateAndTime+".html");
 		System.out.println("ExtentRepot Config Done");
 	}
+	
+	@BeforeClass
+	public static void logFileReport() throws Exception, IOException {
+		writeLogFile();
+
+	}
+
 	
 	@AfterClass
 	public static void JvmReportgeneration() {
