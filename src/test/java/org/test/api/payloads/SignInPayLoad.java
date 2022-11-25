@@ -2,7 +2,7 @@ package org.test.api.payloads;
 
 import org.test.api.baseclass.BaseClass;
 
-public class SignInPayLoad extends BaseClass{
+public class SignInPayLoad {
 	
 	public static String signIn(String email, String password)  {
 		
